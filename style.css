@@ -7,11 +7,11 @@ body {
 }
 
 .container {
-  background-image: url("./img/borboletas.png");
+  background-image: url('borboletas.png'); /* imagem de borboleta em desenho */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgba(255, 240, 245, 0.8); /* fundo suave por cima da imagem */
+  background-color: rgba(255, 240, 245, 0.8);
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   max-width: 600px;
@@ -27,12 +27,12 @@ h1 {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.6em;
   margin: 20px 0;
   line-height: 1.5;
-  font-weight: 600; /* mais suave que bold (700) */
-  color: #270224; /* melhor contraste na impressão */
-   
+  font-weight: 600;
+  color: #a0097f;
+ 
 }
 
 a.button {
@@ -52,20 +52,28 @@ a.button:hover {
   background-color: #ff1493;
 }
 
-/* Créditos */
 body > p:last-of-type {
   font-size: 1em;
   margin-top: 40px;
   color: #800080;
 }
 
-/* Responsividade */
+/* Responsividade para celular */
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
   }
-
   p {
     font-size: 1.2em;
+  }
+  a.button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 1em;
+  }
+  .container {
+    padding: 20px;
+    background-size: contain;
   }
 }
