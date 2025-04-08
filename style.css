@@ -67,9 +67,9 @@ body > p:last-of-type {
     font-size: 1.2em;
   }
   a.button {
-    width: 100%;
+    width: 90%;
     padding: 15px;
-    margin: 10px 0;
+    margin: 15px 0;
     font-size: 1em;
   }
   .container {
