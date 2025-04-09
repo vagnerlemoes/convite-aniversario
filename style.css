@@ -4,6 +4,7 @@ body {
   color: #333;
   text-align: center;
   padding: 40px 20px;
+  overflow: hidden;
 }
 
 .container {
@@ -19,6 +20,9 @@ body {
   padding: 30px;
   backdrop-filter: blur(4px);
 }
+
+
+
 
 h1 {
   color: #ff69b4;
@@ -70,10 +74,28 @@ body > p:last-of-type {
     width: 90%;
     padding: 15px;
     margin: 15px 0;
-    font-size: 1em;
+    font-size: 1.3em;
   }
   .container {
     padding: 20px;
     background-size: contain;
   }
 }
+
+
+.borboleta {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('./icons8-borboleta-80.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: asas 1s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  @keyframes asas {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(10deg); }
+  }
